@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 
 // CORS - Permitir peticiones desde el frontend
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:5500',
+  origin: process.env.CORS_ORIGIN,
   credentials: true
 }));
 
