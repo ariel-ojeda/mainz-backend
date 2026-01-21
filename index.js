@@ -118,9 +118,8 @@ app.listen(PORT, () => {
   console.log('='.repeat(50));
   console.log('🏥 SISTEMA MAINZ MEDICAL SPA');
   console.log('='.repeat(50));
-  console.log(`🔗 Base de datos: ${process.env.DB_DATABASE || 'sistema_gestion'}`);
+  console.log(`🔗 Base de datos: ${process.env.DB_DATABASE || 'railway'}`);
   console.log(`📊 Entorno: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`🔗 Base de datos: ${process.env.DB_NAME || 'sistema_gestion'}`);
   console.log('='.repeat(50));
   console.log('Endpoints disponibles:');
   console.log(`  - GET  /              (Info del API)`);

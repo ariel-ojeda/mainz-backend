@@ -11,7 +11,7 @@ const pool = mysql.createPool({
   port: process.env.DB_PORT || 3306,
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'sistema_gestion',
+  database: process.env.DB_DATABASE || 'railway',   // ✅ CORREGIDO
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
@@ -31,7 +31,7 @@ pool.getConnection((err, connection) => {
   }
   
   console.log('✅ Conexión exitosa a MySQL');
-  console.log(`📊 Base de datos: ${process.env.DB_NAME || 'sistema_gestion'}`);
+  console.log(`📊 Base de datos: ${process.env.DB_DATABASE || 'railway'}`); // ✅ CORREGIDO
   connection.release();
 });
 
